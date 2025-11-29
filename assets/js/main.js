@@ -23,7 +23,7 @@ function initTypewriter() {
 
 function type() {
     const currentText = typewriterText[textIndex];
-    
+
     if (isDeleting) {
         typewriterElement.textContent = currentText.substring(0, charIndex - 1);
         charIndex--;
@@ -49,25 +49,25 @@ function type() {
 // --- Data Rendering (Simulated) ---
 const publications = [
     {
-        title: "Safe Reinforcement Learning in Critical Infrastructure",
-        authors: "K. Aslansefat, et al.",
-        venue: "IEEE Transactions on Neural Networks",
-        year: 2024,
-        tags: ["AI Safety", "RL"]
+        title: "SafeML: safety monitoring of machine learning classifiers through statistical difference measures",
+        authors: "K Aslansefat, I Sorokos, D Whiting, R Tavakoli Kolagari, Y Papadopoulos",
+        venue: "International symposium on model-based safety and assessment",
+        year: 2020,
+        tags: ["Safety", "ML"]
     },
     {
-        title: "Explainable AI for Medical Diagnosis",
-        authors: "S. Smith, K. Aslansefat",
-        venue: "NeurIPS Workshop",
-        year: 2023,
-        tags: ["XAI", "Healthcare"]
+        title: "Hourly performance forecast of a dew point cooler using explainable Artificial Intelligence and evolutionary optimisations by 2050",
+        authors: "YG Akhlaghi, K Aslansefat, X Zhao, S Sadati, A Badiei, X Xiao, S Shittu, ...",
+        venue: "Applied Energy",
+        year: 2021,
+        tags: ["AI", "Energy"]
     },
     {
-        title: "Robustness Certification of Deep Neural Networks",
-        authors: "K. Aslansefat",
-        venue: "CVPR",
-        year: 2023,
-        tags: ["Robustness", "Vision"]
+        title: "Dynamic Fault Tree Analysis: State-of-the-Art in Modelling, Analysis and Tools",
+        authors: "K Aslansefat, S Kabir, Y Gheraibia, Y Papadopoulos",
+        venue: "Reliability Management and Engineering",
+        year: 2020,
+        tags: ["Reliability", "Fault Tree"]
     }
 ];
 
@@ -121,7 +121,7 @@ function renderTalks() {
 function initMobileMenu() {
     const btn = document.getElementById('mobile-menu-btn');
     const menu = document.getElementById('mobile-menu');
-    
+
     if (btn && menu) {
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
